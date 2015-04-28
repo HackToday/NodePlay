@@ -15,15 +15,21 @@
         <!--Sidebar content-->
 
         Search: <input ng-model="query">
+        Sort By:
+        <select ng-model="orderProp">
+          <option value="name">Alpha</option>
+          <option value="time">Newest</option>
+        </select>
 
       </div>
       <div class="col-md-10">
         <!--Body content-->
 
         <ul>
-          <li ng-repeat="music in songs | filter:query | orderBy:'-name'">
+          <li ng-repeat="music in songs | filter:query | orderBy:orderProp">
             <span>{{music.name}}</span>
             <p>{{music.snippet}}</p>
+            <p>{{music.time}}</p>
           </li>
         </ul>
       </div>

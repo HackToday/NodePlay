@@ -1,5 +1,6 @@
-# nodeplay
-Node JS Play Work
+# NodeJS Play
+
+##Node JS Play Work
 
 To play with it, make sure following steps are performed
 

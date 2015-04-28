@@ -9,12 +9,26 @@
   <script src="js/controllers.js"></script>
 </head>
 <body ng-controller="MusicListCtrl">
-  <ul>
-    <li ng-repeat="music in songs">
-       <span>{{music.name}}</span>
-       <p>{{music.snippet}}</p>
-    </li>
-  </ul>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-2">
+        <!--Sidebar content-->
+
+        Search: <input ng-model="query">
+
+      </div>
+      <div class="col-md-10">
+        <!--Body content-->
+
+        <ul>
+          <li ng-repeat="music in songs | filter:query | orderBy:'-name'">
+            <span>{{music.name}}</span>
+            <p>{{music.snippet}}</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
 

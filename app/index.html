@@ -26,8 +26,9 @@
         <!--Body content-->
 
         <ul>
-          <li ng-repeat="music in songs | filter:query | orderBy:orderProp">
-            <span>{{music.title}}</span>
+          <li ng-repeat="music in songs | filter:query | orderBy:orderProp" class="thumbnail">
+            <a href="#/songs/{{music.id}}" class="thumb"><img ng-src="{{music.imageUrl}}"></a>
+            <a href="#/songs/{{music.id}}">{{music.title}}</a>
             <p>{{music.length}}</p>
           </li>
         </ul>

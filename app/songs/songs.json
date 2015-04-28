@@ -1,61 +1,51 @@
 [{
     "title": "Bloom",
+    "id": "bloom-fly",
+    "imageUrl": "img/songs/th.jpg",
     "length": "5:15"
 }, {
     "title": "Morning Mr Magpie",
+    "id": "morning-magic",
+    "imageUrl": "img/songs/th1.jpg",
     "length": "4:41"
 }, {
     "title": "Little by Little",
+    "id": "little",
+    "imageUrl": "img/songs/th2.jpg",
     "length": "4:27"
 }, {
     "title": "Feral",
+    "id": "feral-2",
+    "imageUrl": "img/songs/th3.jpg",
     "length": "3:13"
 }, {
     "title": "Lotus Flower",
+    "id": "lotus",
+    "imageUrl": "img/songs/th4.jpg",
     "length": "5:01"
 }, {
     "title": "Codex",
+    "id": "codex",
+    "imageUrl": "img/songs/th5.jpg",
     "length": "4:47"
 }, {
     "title": "Give Up the Ghost",
+    "id": "catchup",
+    "imageUrl": "img/songs/th6.jpg",
     "length": "4:50"
 }, {
     "title": "Separator",
+    "id": "separt",
+    "imageUrl": "img/songs/th7.jpg",
     "length": "5:20"
 }, {
     "title": "Airbag",
+    "id": "airbag",
+    "imageUrl": "img/songs/th8.jpg",
     "length": "4:44"
 }, {
     "title": "Paranoid Android",
+    "id": "paran",
+    "imageUrl": "img/songs/th9.jpg",
     "length": "6:23"
-}, {
-    "title": "Subterranean Homesick Alien",
-    "length": "4:27"
-}, {
-    "title": "Exit Music (For a Film)",
-    "length": "4:24"
-}, {
-    "title": "Let Down",
-    "length": "4:59"
-}, {
-    "title": "Karma Police",
-    "length": "4:21"
-}, {
-    "title": "Fitter Happier",
-    "length": "1:57"
-}, {
-    "title": "Electioneering",
-    "length": "3:50"
-}, {
-    "title": "Climbing Up the Walls",
-    "length": "4:45"
-}, {
-    "title": "No Surprises",
-    "length": "3:48"
-}, {
-    "title": "Lucky",
-    "length": "4:19"
-}, {
-    "title": "The Tourist",
-    "length": "5:24"
 }]

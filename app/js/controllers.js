@@ -1,11 +1,17 @@
 'use strict';
 
-var musicApp = angular.module('musicApp', []);
+var musicControllers = angular.module('musicControllers', []);
 
-musicApp.controller('MusicListCtrl', ['$scope', '$http',
+musicControllers.controller('MusicListCtrl', ['$scope', '$http',
   function($scope, $http) {
     $http.get('songs/songs.json').success(function(data) {
       $scope.songs = data;
     });
   $scope.orderProp = 'length'
-}]);
+  }]);
+
+musicControllers.controller('MusicDetailCtrl', ['$scope', '$routeParams',
+  function($scope, $routeParams) {
+    $scope.songId = $routeParams.songId;
+  }]);
+

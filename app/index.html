@@ -6,35 +6,14 @@
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="css/app.css">
   <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="js/app.js"></script>
   <script src="js/controllers.js"></script>
 </head>
-<body ng-controller="MusicListCtrl">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-2">
-        <!--Sidebar content-->
+<body>
 
-        Search: <input ng-model="query">
-        Sort By:
-        <select ng-model="orderProp">
-          <option value="title">Alpha</option>
-          <option value="length">Newest</option>
-        </select>
+  <div ng-view></div>
 
-      </div>
-      <div class="col-md-10">
-        <!--Body content-->
-
-        <ul>
-          <li ng-repeat="music in songs | filter:query | orderBy:orderProp" class="thumbnail">
-            <a href="#/songs/{{music.id}}" class="thumb"><img ng-src="{{music.imageUrl}}"></a>
-            <a href="#/songs/{{music.id}}">{{music.title}}</a>
-            <p>{{music.length}}</p>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
 </body>
 </html>
 

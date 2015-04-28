@@ -2,7 +2,7 @@
 
 var musicApp = angular.module('musicApp', []);
 
-musicApp.controller('MusicListCtrl', function ($scope) {
+musicApp.controller('MusicListCtrl', function($scope) {
   $scope.songs = [
     { 'name' : 'See you again',
       'snippet': 'A lovely song for the lost'},

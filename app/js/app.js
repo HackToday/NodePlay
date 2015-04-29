@@ -2,7 +2,8 @@
 
 var musicApp = angular.module('musicApp', [
   'ngRoute',
-  'musicControllers'
+  'musicControllers',
+  'musicServices'
 ]);
 
 musicApp.config(['$routeProvider',

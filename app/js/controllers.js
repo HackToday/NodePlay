@@ -10,8 +10,10 @@ musicControllers.controller('MusicListCtrl', ['$scope', '$http',
   $scope.orderProp = 'length'
   }]);
 
-musicControllers.controller('MusicDetailCtrl', ['$scope', '$routeParams',
-  function($scope, $routeParams) {
-    $scope.songId = $routeParams.songId;
+musicControllers.controller('MusicDetailCtrl', ['$scope', '$routeParams', '$http',
+  function($scope, $routeParams, $http) {
+    $http.get('songs/' + $routeParams.songId + '.json').success(function(data) {
+      $scope.song = data;
+    });
   }]);
 
